@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
 
 interface MarcadorColor {
@@ -51,13 +51,6 @@ export class MarcadoresComponent implements AfterViewInit {
     });
 
     this.leerLocalStorage();
-
-    // const markerHtml: HTMLElement = document.createElement('div');
-    // markerHtml.innerHTML = 'Hola Mundo';
-
-    // new mapboxgl.Marker()
-    //   .setLngLat( this.center )
-    //   .addTo( this.mapa );
 
   }
 
